@@ -1,6 +1,6 @@
 {
-  "name": "Tivo — Gestion Kiosque Mobile Money",
-  "short_name": "Tivo POS",
+  "name": "Tivo",
+  "short_name": "Tivo",
   "description": "Application PWA tout-en-un pour agents Mobile Money au Bénin et en Afrique de l'Ouest (MTN MoMo, Moov Money, Celtis Cash, SMT).",
   "start_url": "/",
   "id": "/",
