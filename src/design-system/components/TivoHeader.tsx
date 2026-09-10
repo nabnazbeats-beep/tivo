@@ -43,7 +43,7 @@ export const TivoHeader: React.FC<TivoHeaderProps> = ({
               <img
                 src="/logo-tivo.png"
                 alt="Logo Tivo"
-                className="w-9 h-9 object-contain drop-shadow-md"
+                className="w-9 h-9 rounded-xl object-contain shadow-md ring-2 ring-white/30"
               />
               <div>
                 <span className="text-xl font-bold tracking-tight block leading-tight">Tivo</span>

@@ -8,7 +8,8 @@ const STATIC_ASSETS = [
   '/favicon.png',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
-  '/icons/icon-maskable.png'
+  '/icons/icon-maskable.png',
+  '/icons/apple-touch-icon.png'
 ];
 
 // Installation : Mise en cache du shell de base

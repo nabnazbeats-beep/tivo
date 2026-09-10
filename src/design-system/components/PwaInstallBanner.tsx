@@ -67,11 +67,11 @@ export const PwaInstallBanner: React.FC = () => {
   return (
     <div className="mx-4 my-3 p-3.5 rounded-2xl bg-gradient-to-r from-blue-600/10 via-sky-500/10 to-cyan-500/10 border border-blue-500/30 flex items-center justify-between gap-3 shadow-sm">
       <div className="flex items-center gap-3">
-        <div className="w-11 h-11 shrink-0 flex items-center justify-center">
+        <div className="w-11 h-11 rounded-2xl bg-white dark:bg-slate-800 p-1 shadow-sm border border-blue-500/20 shrink-0 flex items-center justify-center ring-2 ring-blue-500/15 overflow-hidden">
           <img
             src="/logo-tivo.png"
             alt="Logo Tivo"
-            className="w-full h-full object-contain drop-shadow-md"
+            className="w-full h-full rounded-xl object-contain"
           />
         </div>
         <div>
