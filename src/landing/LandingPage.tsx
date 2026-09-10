@@ -167,7 +167,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <img 
               src="/logo-tivo.png" 
               alt="Logo TIVO" 
-              className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl object-contain shadow-xs ring-1 ring-blue-500/20 hover:scale-105 transition-transform"
+              className="w-7 h-7 sm:w-8 sm:h-8 object-contain drop-shadow-xs hover:scale-105 transition-transform"
             />
             <span className="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white">
               TIVO
@@ -1175,7 +1175,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <img 
                   src="/logo-tivo.png" 
                   alt="Logo TIVO" 
-                  className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl object-contain shadow-xs ring-1 ring-blue-500/20"
+                  className="w-7 h-7 sm:w-8 sm:h-8 object-contain drop-shadow-xs"
                 />
                 <span className="text-lg font-black tracking-tight text-white">
                   TIVO

@@ -159,7 +159,7 @@ export const AuthScreen: React.FC<{
               <img
                 src="/logo-tivo.png"
                 alt="Logo Tivo"
-                className="w-14 h-14 rounded-2xl object-contain shadow-lg ring-2 ring-white/20"
+                className="w-14 h-14 object-contain drop-shadow-lg"
               />
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white leading-tight">

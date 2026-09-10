@@ -1,12 +1,14 @@
-// Tivo Service Worker v2.0.0 — Production Release PWA for West African POS Agents
-const CACHE_NAME = 'tivo-cache-v2.0';
+// Tivo Service Worker v2.1.0 — Production Release PWA for West African POS Agents
+const CACHE_NAME = 'tivo-cache-v2.1';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
   '/logo-tivo.png',
+  '/favicon.png',
   '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/icons/icon-512.png',
+  '/icons/icon-maskable.png'
 ];
 
 // Installation : Mise en cache du shell de base
