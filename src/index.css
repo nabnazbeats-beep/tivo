@@ -1,0 +1,347 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0A2540;
+  --color-accent: #2563EB;
+  --bg-app: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --field-bg: #F1F5F9;
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  color-scheme: light;
+
+  /* Badges Réseaux Mobile Money - Mode Clair (Haute lisibilité, texte foncé) */
+  --net-mtn-bg: #FEF9C3;
+  --net-mtn-border: #FACC15;
+  --net-mtn-text: #854D0E;
+
+  --net-moov-bg: #E0F2FE;
+  --net-moov-border: #7DD3FC;
+  --net-moov-text: #0369A1;
+
+  --net-celtis-bg: #D1FAE5;
+  --net-celtis-border: #6EE7B7;
+  --net-celtis-text: #065F46;
+
+  --net-smt-bg: #EDE9FE;
+  --net-smt-border: #C4B5FD;
+  --net-smt-text: #5B21B6;
+
+  --net-other-bg: #F1F5F9;
+  --net-other-border: #CBD5E1;
+  --net-other-text: #1E293B;
+
+  /* Coupures & Billets - Mode Clair */
+  --den-10000-bg: #F5F3FF;
+  --den-10000-text: #5B21B6;
+  --den-10000-border: #DDD6FE;
+
+  --den-5000-bg: #ECFDF5;
+  --den-5000-text: #065F46;
+  --den-5000-border: #A7F3D0;
+
+  --den-2000-bg: #EFF6FF;
+  --den-2000-text: #1E40AF;
+  --den-2000-border: #BFDBFE;
+
+  --den-1000-bg: #FFF7ED;
+  --den-1000-text: #9A3412;
+  --den-1000-border: #FED7AA;
+
+  --den-500-bg: #F7FEE7;
+  --den-500-text: #3F6212;
+  --den-500-border: #D9F99D;
+
+  --den-coin-gold-bg: #FEFCE8;
+  --den-coin-gold-text: #854D0E;
+  --den-coin-gold-border: #FEF08A;
+
+  --den-coin-slate-bg: #F1F5F9;
+  --den-coin-slate-text: #334155;
+  --den-coin-slate-border: #CBD5E1;
+
+  --den-coin-amber-bg: #FFFBEB;
+  --den-coin-amber-text: #92400E;
+  --den-coin-amber-border: #FDE68A;
+}
+
+.dark {
+  --bg-app: #090D16;
+  --card-bg: #0F172A;
+  --field-bg: #1E293B;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border-color: #1E293B;
+  color-scheme: dark;
+
+  /* Badges Réseaux Mobile Money - Mode Sombre (Fond sombre translucide & Texte lumineux éclatant) */
+  --net-mtn-bg: rgba(234, 179, 8, 0.18);
+  --net-mtn-border: rgba(234, 179, 8, 0.45);
+  --net-mtn-text: #FDE047;
+
+  --net-moov-bg: rgba(2, 132, 199, 0.2);
+  --net-moov-border: rgba(56, 189, 248, 0.45);
+  --net-moov-text: #38BDF8;
+
+  --net-celtis-bg: rgba(16, 185, 129, 0.2);
+  --net-celtis-border: rgba(52, 211, 153, 0.45);
+  --net-celtis-text: #34D399;
+
+  --net-smt-bg: rgba(139, 92, 246, 0.2);
+  --net-smt-border: rgba(167, 139, 250, 0.45);
+  --net-smt-text: #C4B5FD;
+
+  --net-other-bg: rgba(100, 116, 139, 0.2);
+  --net-other-border: rgba(148, 163, 184, 0.4);
+  --net-other-text: #CBD5E1;
+
+  /* Coupures & Billets - Mode Sombre (Fin des pavés blancs agressifs) */
+  --den-10000-bg: rgba(124, 58, 237, 0.2);
+  --den-10000-text: #C4B5FD;
+  --den-10000-border: rgba(124, 58, 237, 0.45);
+
+  --den-5000-bg: rgba(5, 150, 105, 0.2);
+  --den-5000-text: #34D399;
+  --den-5000-border: rgba(5, 150, 105, 0.45);
+
+  --den-2000-bg: rgba(37, 99, 235, 0.2);
+  --den-2000-text: #60A5FA;
+  --den-2000-border: rgba(37, 99, 235, 0.45);
+
+  --den-1000-bg: rgba(234, 88, 12, 0.2);
+  --den-1000-text: #FB923C;
+  --den-1000-border: rgba(234, 88, 12, 0.45);
+
+  --den-500-bg: rgba(101, 163, 13, 0.2);
+  --den-500-text: #A3E635;
+  --den-500-border: rgba(101, 163, 13, 0.45);
+
+  --den-coin-gold-bg: rgba(202, 138, 4, 0.2);
+  --den-coin-gold-text: #FDE047;
+  --den-coin-gold-border: rgba(202, 138, 4, 0.45);
+
+  --den-coin-slate-bg: rgba(100, 116, 139, 0.2);
+  --den-coin-slate-text: #CBD5E1;
+  --den-coin-slate-border: rgba(100, 116, 139, 0.45);
+
+  --den-coin-amber-bg: rgba(217, 119, 6, 0.2);
+  --den-coin-amber-text: #FBBF24;
+  --den-coin-amber-border: rgba(217, 119, 6, 0.45);
+}
+
+/* Mobile App Enhancements */
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html, body {
+  overscroll-behavior-y: none;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Safe Area Insets for Mobile */
+.pt-safe {
+  padding-top: max(16px, env(safe-area-inset-top));
+}
+
+.pb-safe {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+.pb-nav-safe {
+  padding-bottom: max(84px, calc(64px + env(safe-area-inset-bottom)));
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Subtle professional header helpers (Stripe/PayPal sober style) */
+.glass-header {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Press state helper */
+.btn-press {
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s ease;
+}
+
+.btn-press:active {
+  transform: scale(0.98);
+}
+
+/* Loader square styling (clean, flat, no neon glow) */
+@keyframes tivo-bounce-morph {
+  0%, 100% {
+    transform: translateY(0) scale(1, 1);
+    border-radius: 4px;
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(-8px) scale(0.9, 1.1);
+    border-radius: 6px;
+    opacity: 1;
+  }
+}
+
+.tivo-square-1 {
+  animation: tivo-bounce-morph 0.85s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.tivo-square-2 {
+  animation: tivo-bounce-morph 0.85s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 0.15s;
+}
+
+.tivo-square-3 {
+  animation: tivo-bounce-morph 0.85s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 0.30s;
+}
+
+/* ==========================================================================
+   TIVO FLOATING ANIMATIONS (Hero Section Badges Float)
+   Micro-animations douces et élégantes simulant des cartes en lévitation
+   ========================================================================== */
+@keyframes tivo-float-smooth-1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-4deg);
+  }
+}
+
+@keyframes tivo-float-smooth-2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(7.5deg);
+  }
+}
+
+@keyframes tivo-float-smooth-3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(-7deg);
+  }
+}
+
+@keyframes tivo-float-smooth-4 {
+  0%, 100% {
+    transform: translateY(0px) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(4.5deg);
+  }
+}
+
+.tivo-floating-badge-1 {
+  animation: tivo-float-smooth-1 4.2s ease-in-out infinite;
+}
+
+.tivo-floating-badge-2 {
+  animation: tivo-float-smooth-2 4.8s ease-in-out infinite 0.4s;
+}
+
+.tivo-floating-badge-3 {
+  animation: tivo-float-smooth-3 4.4s ease-in-out infinite 0.8s;
+}
+
+.tivo-floating-badge-4 {
+  animation: tivo-float-smooth-4 5s ease-in-out infinite 1.2s;
+}
+
+/* ==========================================================================
+   TIVO PRINT & EXPORT DOCUMENT ISOLATION RULES
+   Masque TOUTE l'interface de l'application (en-tête, boutons, tabs, barre du bas)
+   pour n'imprimer STRICTEMENT QUE la facture, le reçu ou le ticket de caisse.
+   ========================================================================== */
+@media print {
+  /* Masquer tous les éléments d'interface générale */
+  nav,
+  header,
+  footer,
+  button,
+  .no-print,
+  [data-tivo-bottom-nav] {
+    display: none !important;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Mode d'impression isolé TIVO */
+  body.tivo-printing-isolated * {
+    visibility: hidden !important;
+  }
+
+  body.tivo-printing-isolated .tivo-printable-isolated,
+  body.tivo-printing-isolated .tivo-printable-isolated * {
+    visibility: visible !important;
+  }
+
+  body.tivo-printing-isolated .tivo-printable-isolated {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 8mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Si ticket thermique POS */
+  body.tivo-printing-isolated .tivo-printable-ticket {
+    max-width: 80mm !important;
+    margin: 0 auto !important;
+    padding: 4mm !important;
+    border: 1px dashed #cbd5e1 !important;
+  }
+
+  @page {
+    margin: 5mm;
+  }
+}
